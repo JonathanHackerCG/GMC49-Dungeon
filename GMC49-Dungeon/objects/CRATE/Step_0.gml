@@ -1,0 +1,9 @@
+/// @desc CRATE: Step
+
+if (grabbed)
+{
+	if (x > 0 && y > 0)
+	{
+		if (!place_meeting(x, y, PLAYER)) { grabbed = false; }
+	}
+}

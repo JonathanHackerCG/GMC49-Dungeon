@@ -11,7 +11,7 @@ if (xx != 0 || yy != 0)
 }
 #endregion
 #region Grabbing Crates
-var _inst = instance_place(x, y, obj_crate);
+var _inst = instance_place(x, y, CRATE);
 if (instance_exists(_inst) && !_inst.grabbed)
 {
 	with (_inst)
@@ -26,5 +26,16 @@ if (instance_exists(_inst) && !_inst.grabbed)
 }
 #endregion
 #region Placing Crates
-
+if (keyboard_check_pressed(vk_space) && crate_count > 0)
+{
+	_inst = crates[0];
+	with (_inst)
+	{
+		x = PLAYER.x;
+		y = PLAYER.y;
+	}
+	
+	array_delete(crates, 0, 1);
+	crate_count --;
+}
 #endregion

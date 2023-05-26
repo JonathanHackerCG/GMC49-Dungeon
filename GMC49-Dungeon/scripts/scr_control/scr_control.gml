@@ -36,6 +36,14 @@ function _set_active_layer(_lay_id)
 		{
 			if (linked) { layer = _lay_id; }
 		}
+		with (PLAYER)
+		{
+			for (var i = 0; i < crate_count; i++)
+			{
+				var _crate = crates[i];
+				_crate.layer = _lay_id;
+			}
+		}
 		
 		instance_deactivate_layer(LAYERS.past);
 		instance_deactivate_layer(LAYERS.future);
