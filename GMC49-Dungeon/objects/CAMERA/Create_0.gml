@@ -5,7 +5,7 @@ cam_speed_arrow = 0;		//Panning speed with WASD.
 cam_speed_mouse = 0;		//Panning speed with mouse.
 clamp_cursor = false;		//Clamp cursor within game window.
 
-fullscreen = false;			//Fullscreen or windowed.
+fullscreen = true;			//Fullscreen or windowed.
 
 //Potential user zoom values.
 zoom_options = [1];
