@@ -248,6 +248,7 @@
     {"id":{"name":"__scribble_gen_2_parser","path":"scripts/__scribble_gen_2_parser/__scribble_gen_2_parser.yy",},},
     {"id":{"name":"input_gamepad_constant_get_name","path":"scripts/input_gamepad_constant_get_name/input_gamepad_constant_get_name.yy",},},
     {"id":{"name":"input_combo_get_phase_count","path":"scripts/input_combo_get_phase_count/input_combo_get_phase_count.yy",},},
+    {"id":{"name":"spr_ex_canvas_20","path":"sprites/spr_ex_canvas_20/spr_ex_canvas_20.yy",},},
     {"id":{"name":"__input_gamepad_guid_parse","path":"scripts/__input_gamepad_guid_parse/__input_gamepad_guid_parse.yy",},},
     {"id":{"name":"input_gyro_params_set","path":"scripts/input_gyro_params_set/input_gyro_params_set.yy",},},
     {"id":{"name":"__input_system_tick","path":"scripts/__input_system_tick/__input_system_tick.yy",},},
