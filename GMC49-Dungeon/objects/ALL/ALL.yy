@@ -3,14 +3,13 @@
   "resourceVersion": "1.0",
   "name": "ALL",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "GMC49-Dungeon",
-    "path": "GMC49-Dungeon.yyp",
+    "name": "Control",
+    "path": "folders/Control.yy",
   },
   "parentObjectId": null,
   "persistent": false,

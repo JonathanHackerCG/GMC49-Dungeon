@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "GMC49-Dungeon",
-    "path": "GMC49-Dungeon.yyp",
+    "name": "Control",
+    "path": "folders/Control.yy",
   },
   "parentObjectId": null,
   "persistent": true,
