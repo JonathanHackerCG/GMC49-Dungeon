@@ -1,5 +1,7 @@
 /// @description Camera initialization and methods.
 
+depthgrid = ds_grid_create(2, 1);
+
 #region EDIT: Camera settings.
 cam_speed_arrow = 0;		//Panning speed with WASD.
 cam_speed_mouse = 0;		//Panning speed with mouse.

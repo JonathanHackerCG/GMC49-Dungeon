@@ -1,6 +1,5 @@
 /// @desc PLAYER: Draw
 
-draw_self();
 for (var i = 0; i < crate_count; i++)
 {
 	var _crate = crates[i];
