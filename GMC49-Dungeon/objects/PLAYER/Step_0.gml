@@ -1,5 +1,6 @@
 /// @desc PLAYER: Step
 
+_depth = -bbox_bottom;
 #region Movement
 var xx = keyboard_check(vk_right) - keyboard_check(vk_left);
 var yy = keyboard_check(vk_down)	- keyboard_check(vk_up);

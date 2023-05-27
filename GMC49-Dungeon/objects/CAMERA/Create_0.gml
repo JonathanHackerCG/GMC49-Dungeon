@@ -307,7 +307,7 @@ function init_screen_default()
 {
 	var _s_base = prescale_options[prescale_index];
 	CAMERA.scale_override = 0;
-	CAMERA.init_screen(640, 640, 360, 360, 2, fullscreen);
+	CAMERA.init_screen(320, 320, 180, 180, 4, fullscreen);
 }
 #endregion
 #region toggle_fullscreen();

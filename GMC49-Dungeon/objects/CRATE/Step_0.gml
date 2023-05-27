@@ -1,5 +1,6 @@
 /// @desc CRATE: Step
 
+_depth = -bbox_bottom;
 if (grabbed)
 {
 	if (x > 0 && y > 0)

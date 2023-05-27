@@ -1,5 +1,6 @@
 /// @description Updating.
 
+if (instance_exists(PLAYER)) { follow(PLAYER, 10, width / 2, height / 2); }
 update();
 
 if (is_fading())

@@ -9,6 +9,7 @@ function move_to_future()
 	{
 		sprite_index = sprite_future;
 	}
+	set_background(bkg_F);	
 }
 #endregion
 #region move_to_past();
@@ -21,7 +22,7 @@ function move_to_past()
 	{
 		sprite_index = sprite_past;
 	}
-	
+	set_background(bkg_P);
 }
 #endregion
 #region _set_active_layer(lay_id);
@@ -50,5 +51,16 @@ function _set_active_layer(_lay_id)
 		instance_activate_layer(_lay_id);
 		_previous_layer = _lay_id;
 	}
+}
+#endregion
+
+#region set_background(sprite);
+/// @func set_background
+/// @arg	sprite
+function set_background(_sprite)
+{
+	var lay_id = layer_get_id("Background");
+	var back_id = layer_background_get_id(lay_id);
+	layer_background_sprite(back_id, _sprite);
 }
 #endregion
