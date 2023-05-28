@@ -53,4 +53,12 @@ function initialize_wires()
 		show_debug_message(count);
 	} until (done || count > MAX_COUNT);
 	ds_list_destroy(temp);
+	
+	with (obj_pressure_plate)
+	{
+		array_foreach(targets, function(_element, _index)
+		{
+			_element.triggers_required ++;
+		});
+	}
 }
