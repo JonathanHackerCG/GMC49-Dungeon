@@ -29,7 +29,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
+  "solid": true,
   "spriteId": {
     "name": "spr_wall_large_P",
     "path": "sprites/spr_wall_large_P/spr_wall_large_P.yy",

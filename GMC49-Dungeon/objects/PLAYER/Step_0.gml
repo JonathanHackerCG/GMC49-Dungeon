@@ -2,13 +2,12 @@
 
 _depth = -bbox_bottom;
 #region Movement
-var xx = keyboard_check(vk_right) - keyboard_check(vk_left);
-var yy = keyboard_check(vk_down)	- keyboard_check(vk_up);
+var DIR = input_direction("left", "right", "up", "down");
+var DIS = input_distance("left", "right", "up", "down");
 
-if (xx != 0 || yy != 0)
+if (DIS > 0 && DIR != undefined)
 {
-	x += xx * move_speed;
-	y += yy * move_speed;
+	step_direction_solid(DIR, DIS * move_speed);
 }
 #endregion
 #region Grabbing Crates
@@ -27,7 +26,7 @@ if (instance_exists(_inst) && !_inst.grabbed)
 }
 #endregion
 #region Placing Crates
-if (keyboard_check_pressed(vk_space) && crate_count > 0)
+if (input_check_pressed("action") && crate_count > 0)
 {
 	_inst = crates[0];
 	with (_inst)

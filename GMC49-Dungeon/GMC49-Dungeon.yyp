@@ -67,9 +67,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"_Assets","folderPath":"folders/Objects/Pressure Plate/_Assets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Walls","folderPath":"folders/Objects/Walls.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"_Assets","folderPath":"folders/Objects/Walls/_Assets.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"REQUIRED","folderPath":"folders/REQUIRED.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Wire","folderPath":"folders/Objects/Wire.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"_Assets","folderPath":"folders/Objects/Wire/_Assets.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"REQUIRED","folderPath":"folders/REQUIRED.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles",},
