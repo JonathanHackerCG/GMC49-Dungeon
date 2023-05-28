@@ -136,10 +136,24 @@ function follow(_inst, _factor, _xoff, _yoff)
 	if (is_undefined(_inst) || !instance_exists(_inst)) { return false; }
 
 	//Find target locations.
-	var targetx = rdec(_inst.x - wcenter + _xoff);
-	var targety = rdec(_inst.y - hcenter + _yoff);
-	targetx = clamp(targetx, 0, room_width - width);
-	targety = clamp(targety, 0, room_height - height);
+	var targetx = rdec(_inst.x + _xoff);
+	var targety = rdec(_inst.y + _yoff);
+	targetx = clamp(targetx, 0, room_width);
+	targety = clamp(targety, 0, room_height);
+	var w = width;
+	var h = height;
+	
+	#region Camera Regions
+	if (instance_exists(PLAYER))
+	{
+		var _region = instance_position(PLAYER.x, PLAYER.y, obj_camera_region);
+		if (instance_exists(_region))
+		{
+			targetx = clamp(targetx, _region.x1 + (w / 2), _region.x2 - (w / 2));
+			targety = clamp(targety, _region.y1 + (h / 2), _region.y2 - (h / 2));
+		}
+	}
+	#endregion
 	
 	var minimum = 0.25;
 	if (xpos == targetx && ypos == targety) {	_moving = false; return false; }
