@@ -1,9 +1,24 @@
 //LAYER MANAGEMENT
+#macro IN_PAST global.__in_past
+#macro IN_FUTURE global.__in_future
+
+#region swap_worlds();
+/// @func swap_worlds();
+/// @desc Swaps between times/worlds.
+function swap_worlds()
+{
+	if (IN_FUTURE) { move_to_past(); }
+	else { move_to_future(); }
+}
+#endregion
 #region move_to_future();
 /// @func move_to_future():
 /// @desc Transition to the Future.
 function move_to_future()
 {
+	IN_FUTURE = true;
+	IN_PAST = false;
+	
 	_set_active_layer(LAYERS.future);
 	with (ALL)
 	{
@@ -17,6 +32,9 @@ function move_to_future()
 /// @desc Transition to the Past.
 function move_to_past()
 {
+	IN_FUTURE = false;
+	IN_PAST = true;
+	
 	_set_active_layer(LAYERS.past);
 	with (ALL)
 	{

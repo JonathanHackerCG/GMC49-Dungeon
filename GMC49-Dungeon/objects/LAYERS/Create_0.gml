@@ -1,7 +1,7 @@
 /// @desc LAYERS: Create
 
 // Initialize layers.
-#macro DEFAULT_LAYER LAYERS.past
+#macro DEFAULT_LAYER LAYERS.future
 control = layer_get_id("Control");
 future	= layer_get_id("Future");
 past		= layer_get_id("Past");

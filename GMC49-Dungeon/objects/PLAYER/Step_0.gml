@@ -39,3 +39,14 @@ if (input_check_pressed("action") && crate_count > 0)
 	crate_count --;
 }
 #endregion
+#region Time Portals
+if (place_meeting(x, y, obj_time_portal))
+{
+	if (can_portal)
+	{
+		swap_worlds();
+		can_portal = false;
+	}
+}
+else { can_portal = true; }
+#endregion
