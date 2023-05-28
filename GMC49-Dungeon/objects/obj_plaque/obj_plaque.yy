@@ -1,20 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pressure_plate",
+  "name": "obj_plaque",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pressure Plate",
-    "path": "folders/Objects/Pressure Plate.yy",
+    "name": "Plaque",
+    "path": "folders/Objects/Plaque.yy",
   },
   "parentObjectId": {
-    "name": "ALL",
-    "path": "objects/ALL/ALL.yy",
+    "name": "WALL",
+    "path": "objects/WALL/WALL.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,11 +28,13 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"text","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"undefined","varType":4,},
+  ],
+  "solid": true,
   "spriteId": {
-    "name": "spr_pressure_plate_P",
-    "path": "sprites/spr_pressure_plate_P/spr_pressure_plate_P.yy",
+    "name": "spr_plaque_P",
+    "path": "sprites/spr_plaque_P/spr_plaque_P.yy",
   },
   "spriteMaskId": null,
   "tags": [

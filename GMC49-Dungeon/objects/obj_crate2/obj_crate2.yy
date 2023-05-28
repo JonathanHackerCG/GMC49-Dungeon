@@ -33,5 +33,8 @@
     "path": "sprites/spr_crate2/spr_crate2.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "LevelBuilding",
+  ],
   "visible": true,
 }

@@ -38,5 +38,8 @@
     "path": "sprites/spr_door_P/spr_door_P.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "LevelBuilding",
+  ],
   "visible": true,
 }

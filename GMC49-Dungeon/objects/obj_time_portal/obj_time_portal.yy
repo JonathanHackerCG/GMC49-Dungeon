@@ -33,5 +33,8 @@
     "path": "sprites/spr_time_portal/spr_time_portal.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "LevelBuilding",
+  ],
   "visible": true,
 }

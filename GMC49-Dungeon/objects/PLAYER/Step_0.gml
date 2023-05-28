@@ -10,6 +10,18 @@ if (DIS > 0 && DIR != undefined)
 	step_direction_solid(DIR, DIS * move_speed);
 }
 #endregion
+#region Plaques
+can_interact = false;
+var _plaque = instance_nearest(x, y, obj_plaque);
+if (instance_exists(_plaque) && distance_to_object(_plaque) <= 20)
+{
+	can_interact = true;
+	if (input_check_pressed("action") && !instance_exists(obj_inscription))
+	{
+		show_inscription(_plaque.text);
+	}
+}
+#endregion
 #region Grabbing Crates
 var _inst = instance_place(x, y, CRATE);
 if (instance_exists(_inst) && !_inst.grabbed)
@@ -26,17 +38,24 @@ if (instance_exists(_inst) && !_inst.grabbed)
 }
 #endregion
 #region Placing Crates
-if (input_check_pressed("action") && crate_count > 0)
+if (!can_interact && input_check_pressed("action") && crate_count > 0)
 {
-	_inst = crates[0];
-	with (_inst)
+	if (instance_exists(obj_inscription))
 	{
-		x = PLAYER.x;
-		y = PLAYER.y;
+		with (obj_inscription) { instance_destroy(); }
 	}
+	else
+	{
+		_inst = crates[0];
+		with (_inst)
+		{
+			x = PLAYER.x;
+			y = PLAYER.y;
+		}
 	
-	array_delete(crates, 0, 1);
-	crate_count --;
+		array_delete(crates, 0, 1);
+		crate_count --;
+	}
 }
 #endregion
 #region Time Portals

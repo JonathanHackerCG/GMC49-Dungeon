@@ -35,5 +35,8 @@
     "path": "sprites/spr_wall_large_P/spr_wall_large_P.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "LevelBuilding",
+  ],
   "visible": true,
 }

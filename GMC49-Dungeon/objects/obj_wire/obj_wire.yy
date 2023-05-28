@@ -35,5 +35,8 @@
     "path": "sprites/spr_wire_P/spr_wire_P.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "LevelBuilding",
+  ],
   "visible": true,
 }

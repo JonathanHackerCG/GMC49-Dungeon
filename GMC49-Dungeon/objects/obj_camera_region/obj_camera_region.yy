@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Camera Region",
-    "path": "folders/Objects/Camera Region.yy",
+    "name": "Control",
+    "path": "folders/Objects/Control.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -32,5 +32,8 @@
     "path": "sprites/spr_camera_region/spr_camera_region.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "LevelBuilding",
+  ],
   "visible": true,
 }

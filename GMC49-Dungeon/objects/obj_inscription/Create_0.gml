@@ -29,8 +29,8 @@ function set_text(_text)
 /// @func _set_scribble
 function _set_scribble()
 {
-	text_scribble = scribble($"[pin_center]{text_string}")
+	text_scribble = scribble($"{text_string}")
 		.starting_format(text_font, c_white)
-		.align(fa_center, fa_middle);
+		.align(fa_center, fa_center);
 }
 #endregion
