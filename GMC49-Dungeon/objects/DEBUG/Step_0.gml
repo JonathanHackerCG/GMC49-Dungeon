@@ -1,5 +1,11 @@
 /// @desc DEBUG: Step
 
+if (keyboard_check_pressed(vk_f3))
+{
+	enabled = !enabled;
+	with (obj_camera_region) { visible = DEBUG.enabled; }
+}
+
 if (keyboard_check_pressed(vk_f12))
 {
 	game_end();
