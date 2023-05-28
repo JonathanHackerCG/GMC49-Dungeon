@@ -1,7 +1,9 @@
 /// @desc Pressure Plate: Create
 event_inherited();
-_depth = RH;
 
+targets = [];
+
+_depth = RH;
 image_speed = 0;
 image_index = 0;
 active = false;
