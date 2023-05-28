@@ -20,6 +20,7 @@ INPUT_DEFAULT_PROFILES = {
         
         action: input_binding_key(vk_space),
         pause:	input_binding_key(vk_escape),
+				help:		input_binding_key(vk_f1)
     },
     
     gamepad:
@@ -30,7 +31,8 @@ INPUT_DEFAULT_PROFILES = {
         right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_axis(gp_axisrh, false), input_binding_gamepad_button(gp_padr)],
         
         action:  [input_binding_gamepad_button(gp_face1), input_binding_gamepad_button(gp_face2)],
-        pause:	 [input_binding_gamepad_button(gp_start), input_binding_gamepad_button(gp_start)]
+        pause:	 input_binding_gamepad_button(gp_start),
+				help:		 input_binding_gamepad_button(gp_select)
     },
     
 };

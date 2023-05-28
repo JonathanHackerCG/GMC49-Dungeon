@@ -269,9 +269,10 @@ function init_screen(w_min, w_max, h_min, h_max, scale_base, fullscreen, origina
 	camera_set_view_size(cam_id, width, height);
 	#endregion
 	#region Resize the GUI.
-	display_set_gui_maximize(s_base, s_base, 0, 0);
-	gui_w = display_get_gui_width() * s_real;
-	gui_h = display_get_gui_height() * s_real;
+	display_set_gui_maximize(1, 1, 0, 0);
+	display_set_gui_size(width * s_base * s_real, height * s_base * s_real);
+	gui_w = display_get_gui_width()/* * s_real*/;
+	gui_h = display_get_gui_height()/* * s_real*/;
 	#endregion
 	#region Set camera view values.
 	view_camera[0] = cam_id;

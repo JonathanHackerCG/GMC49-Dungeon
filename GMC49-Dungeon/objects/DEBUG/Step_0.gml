@@ -1,6 +1,6 @@
 /// @desc DEBUG: Step
 
-if (keyboard_check_pressed(vk_escape))
+if (keyboard_check_pressed(vk_f12))
 {
 	game_end();
 }
