@@ -81,21 +81,21 @@ function step_direction_solid(dir, spd) {
 	var yy = lengthdir_y(spd, dir);
 	#endregion
 	#region Collision checking and movement.
-	if (place_free(x + xx, y)) { x += xx; }
-	else
-	{
-		//Moving up against walls horizontally.
-		if (xx > 0) { move_contact_solid(000, xx); }
-		else { move_contact_solid(180, -xx); }
-	}
+	if (place_free(x + xx, y) && tile_free(x + xx, y)) { x += xx; }
+	//else
+	//{
+	//	//Moving up against walls horizontally.
+	//	if (xx > 0) { move_contact_solid(000, xx); }
+	//	else { move_contact_solid(180, -xx); }
+	//}
 	
-	if (place_free(x, y + yy)) { y += yy; }
-	else
-	{
-		//Moving up against walls vertically.
-		if (yy > 0) { move_contact_solid(270, yy); }
-		else { move_contact_solid(090, -yy); }
-	}
+	if (place_free(x, y + yy) && tile_free(x, y + yy)) { y += yy; }
+	//else
+	//{
+	//	//Moving up against walls vertically.
+	//	if (yy > 0) { move_contact_solid(270, yy); }
+	//	else { move_contact_solid(090, -yy); }
+	//}
 	#endregion
 	return (x != x1 || y != y1);
 }
@@ -251,6 +251,32 @@ function step_direction_solid_fast(_xspd, _yspd, _friction = 1.00, _angle = unde
 		if (place_free(x, goy)) { y += _yspd; }
 		else if (place_free(newx, y)) { x += _bxspd; }
 	}
+}
+#endregion
+
+#region tile_free(x, y, layer)
+/// @func tile_free(x, y, layer):
+/// @arg	x
+/// @arg	y
+/// @arg	[layer]
+function tile_free(_x, _y, _layer = "TilesWalls")
+{
+  var _tm = layer_tilemap_get_id(_layer);
+
+	var _x1 = tilemap_get_cell_x_at_pixel(_tm, bbox_left + (_x - x), y),
+		  _y1 = tilemap_get_cell_y_at_pixel(_tm, x, bbox_top + (_y - y)),
+		  _x2 = tilemap_get_cell_x_at_pixel(_tm, bbox_right + (_x - x), y),
+		  _y2 = tilemap_get_cell_y_at_pixel(_tm, x, bbox_bottom + (_y - y));
+
+	for (var xx = _x1; xx <= _x2; xx++) {
+	for (var yy = _y1; yy <= _y2; yy++) {
+    if (tile_get_index(tilemap_get(_tm, xx, yy)))
+		{
+			return false;
+    }
+	} }
+
+return true;
 }
 #endregion
 

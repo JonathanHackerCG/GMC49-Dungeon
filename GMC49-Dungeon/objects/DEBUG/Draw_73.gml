@@ -1,4 +1,6 @@
 /// @desc DEBUG: Draw End
+if (!enabled) { exit; }
+
 with (obj_pressure_plate)
 {
 	var _size = array_length(targets);

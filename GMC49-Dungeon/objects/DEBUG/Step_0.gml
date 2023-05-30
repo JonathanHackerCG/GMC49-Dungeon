@@ -4,6 +4,7 @@ if (keyboard_check_pressed(vk_f3))
 {
 	enabled = !enabled;
 	with (obj_camera_region) { visible = DEBUG.enabled; }
+	show_debug_overlay(enabled);
 }
 
 if (keyboard_check_pressed(vk_f12))

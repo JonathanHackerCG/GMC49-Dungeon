@@ -1,4 +1,4 @@
 /// @desc DEBUG: Create
 
-enabled = true;
+enabled = false;
 show_debug_overlay(enabled);
