@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c58b622a-3648-40c5-a7a8-09297eb74368",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6374761-e340-41d6-9d68-5dbafa279d7a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a4553e6-b24e-4edf-9ddc-3a224fa5a185",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"49af6f2d-edd0-490f-be30-2fee4c0ac5e2",},
   ],
   "gridX": 4,
   "gridY": 4,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6d3cdc1d-29ea-406a-b7f4-fd0756ccf18c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fe81543a-9f87-460d-80d8-f3a1127d71cb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c58b622a-3648-40c5-a7a8-09297eb74368","path":"sprites/spr_pressure_plate_F/spr_pressure_plate_F.yy",},},},"Disabled":false,"id":"9537b858-7bd0-4d07-ac2d-b39bfca5ffef","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6374761-e340-41d6-9d68-5dbafa279d7a","path":"sprites/spr_pressure_plate_F/spr_pressure_plate_F.yy",},},},"Disabled":false,"id":"2db14afc-bfc8-4e57-81af-0c585a11ec02","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7a4553e6-b24e-4edf-9ddc-3a224fa5a185","path":"sprites/spr_pressure_plate_F/spr_pressure_plate_F.yy",},},},"Disabled":false,"id":"67a2b0dd-33e6-440b-8252-8a7a7541f120","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"49af6f2d-edd0-490f-be30-2fee4c0ac5e2","path":"sprites/spr_pressure_plate_F/spr_pressure_plate_F.yy",},},},"Disabled":false,"id":"c54e74d9-3c26-4f95-b3a8-5d93a31a8709","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

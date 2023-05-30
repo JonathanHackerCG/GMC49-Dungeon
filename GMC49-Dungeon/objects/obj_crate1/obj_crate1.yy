@@ -9,7 +9,10 @@
     "name": "Crates",
     "path": "folders/Objects/Crates.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "CRATE",
+    "path": "objects/CRATE/CRATE.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

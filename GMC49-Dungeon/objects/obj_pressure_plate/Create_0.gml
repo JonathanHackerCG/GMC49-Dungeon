@@ -9,7 +9,7 @@ image_index = 0;
 active = false;
 
 sprite_past = spr_pressure_plate_P;
-sprite_future = spr_pressure_plate_F;
+sprite_future = spr_pressure_plate_P;
 
 function activate()
 {
