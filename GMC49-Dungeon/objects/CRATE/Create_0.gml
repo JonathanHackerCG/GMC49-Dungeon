@@ -2,3 +2,4 @@
 event_inherited();
 
 grabbed = false;
+skip_draw_self = true;

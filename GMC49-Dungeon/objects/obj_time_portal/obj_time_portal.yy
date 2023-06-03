@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_time_portal",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_time_portal",
-    "path": "sprites/spr_time_portal/spr_time_portal.yy",
+    "name": "spr_time_portal_P",
+    "path": "sprites/spr_time_portal_P/spr_time_portal_P.yy",
   },
   "spriteMaskId": null,
   "tags": [

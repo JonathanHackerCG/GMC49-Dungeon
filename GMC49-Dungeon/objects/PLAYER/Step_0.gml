@@ -8,6 +8,13 @@ var DIS = input_distance("left", "right", "up", "down");
 if (DIS > 0 && DIR != undefined)
 {
 	step_direction_solid(DIR, DIS * move_speed);
+	
+	sprite_dir = round(DIR / 90) % 4;
+	sprite_index = sprites_walk[sprite_dir];
+}
+else
+{
+	sprite_index = sprites_idle[sprite_dir];
 }
 #endregion
 #region Plaques
@@ -50,7 +57,7 @@ if (!can_interact && input_check_pressed("action") && crate_count > 0)
 		with (_inst)
 		{
 			x = PLAYER.x;
-			y = PLAYER.y;
+			y = PLAYER.y + 4;
 		}
 	
 		array_delete(crates, 0, 1);

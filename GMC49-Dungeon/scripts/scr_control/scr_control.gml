@@ -24,7 +24,8 @@ function move_to_future()
 	{
 		sprite_index = sprite_future;
 	}
-	set_background(bkg_F);	
+	set_background(bkg_F);
+	set_tilemap("TilesWalls", tst_walls_F);
 }
 #endregion
 #region move_to_past();
@@ -41,6 +42,7 @@ function move_to_past()
 		sprite_index = sprite_past;
 	}
 	set_background(bkg_P);
+	set_tilemap("TilesWalls", tst_walls_P);
 }
 #endregion
 #region _set_active_layer(lay_id);
@@ -80,5 +82,16 @@ function set_background(_sprite)
 	var lay_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(lay_id);
 	layer_background_sprite(back_id, _sprite);
+}
+#endregion
+#region set_tilemap(_layer, _tileset);
+/// @func set_tilemap
+/// @arg	layer
+/// @arg	tileset
+function set_tilemap(_layer, _tileset)
+{
+	var lay_id = layer_get_id(_layer);
+	var tile_id = layer_tilemap_get_id(lay_id);
+	tilemap_tileset(tile_id, _tileset);
 }
 #endregion

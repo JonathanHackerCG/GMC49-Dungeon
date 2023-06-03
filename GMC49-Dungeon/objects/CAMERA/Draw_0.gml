@@ -7,7 +7,7 @@ for (var i = 0; i < inst_num; i++)
 	if (!inst.is_visible) { continue; }
 	with (inst)
 	{
-		draw_self();
+		if (!skip_draw_self) { draw_self(); }
 		event_user(15);
 	}
 }

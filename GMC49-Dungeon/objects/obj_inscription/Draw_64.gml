@@ -8,3 +8,4 @@ if (text_scribble != undefined)
 {
 	text_scribble.draw(GUI_W / 2, GUI_H / 2);
 }
+draw_reset();

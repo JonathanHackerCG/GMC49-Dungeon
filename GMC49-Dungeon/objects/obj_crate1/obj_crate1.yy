@@ -29,12 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_crate1",
-    "path": "sprites/spr_crate1/spr_crate1.yy",
+    "name": "spr_crate_P",
+    "path": "sprites/spr_crate_P/spr_crate_P.yy",
   },
   "spriteMaskId": null,
   "tags": [
     "LevelBuilding",
   ],
-  "visible": true,
+  "visible": false,
 }
