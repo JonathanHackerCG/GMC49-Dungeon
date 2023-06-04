@@ -66,12 +66,16 @@ if (!can_interact && input_check_pressed("action") && crate_count > 0)
 }
 #endregion
 #region Time Portals
-if (place_meeting(x, y, obj_time_portal))
+var inst = instance_place(x, y, obj_time_portal);
+if (instance_exists(inst))
 {
 	if (can_portal)
 	{
+		x = inst.x + 10;
+		y = inst.y + 6;
 		swap_worlds();
 		can_portal = false;
+		CAMERA.follow(id, 0);
 	}
 }
 else { can_portal = true; }

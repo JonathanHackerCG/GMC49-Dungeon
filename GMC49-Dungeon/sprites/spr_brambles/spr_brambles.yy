@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_brambles",
-  "bbox_bottom": 18,
-  "bbox_left": 1,
-  "bbox_right": 18,
-  "bbox_top": 1,
+  "bbox_bottom": 19,
+  "bbox_left": 0,
+  "bbox_right": 19,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40f0442c-4ef5-4970-882c-f98902c2eff2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9e1ed6a-5046-41ef-9969-f2704e431d06",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"edc72b03-39b8-41fa-b23b-04bb46d24221","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"25ce5c7e-8e56-47be-9441-f458093d53aa","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -77,7 +77,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40f0442c-4ef5-4970-882c-f98902c2eff2","path":"sprites/spr_brambles/spr_brambles.yy",},},},"Disabled":false,"id":"6328d172-bd65-4dc0-af3c-35b6b7b07c74","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a9e1ed6a-5046-41ef-9969-f2704e431d06","path":"sprites/spr_brambles/spr_brambles.yy",},},},"Disabled":false,"id":"8e30142e-d3c9-4ed2-9a80-e6a4b3ab6854","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

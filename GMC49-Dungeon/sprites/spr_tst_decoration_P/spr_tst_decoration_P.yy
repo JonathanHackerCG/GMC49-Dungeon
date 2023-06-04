@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_tst_decoration_P",
   "bbox_bottom": 39,
-  "bbox_left": 0,
+  "bbox_left": 4,
   "bbox_right": 49,
   "bbox_top": 0,
   "bboxMode": 0,

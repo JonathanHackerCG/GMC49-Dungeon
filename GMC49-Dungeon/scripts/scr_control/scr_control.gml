@@ -26,6 +26,8 @@ function move_to_future()
 	}
 	set_background(bkg_F);
 	set_tilemap("TilesWalls", tst_walls_F);
+	set_tilemap("TilesDecorationA", tst_decoration_F);
+	set_tilemap("TilesDecorationB", tst_decoration_F);
 }
 #endregion
 #region move_to_past();
@@ -43,6 +45,8 @@ function move_to_past()
 	}
 	set_background(bkg_P);
 	set_tilemap("TilesWalls", tst_walls_P);
+	set_tilemap("TilesDecorationA", tst_decoration_P);
+	set_tilemap("TilesDecorationB", tst_decoration_P);
 }
 #endregion
 #region _set_active_layer(lay_id);

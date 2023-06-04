@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_rubble",
-  "bbox_bottom": 18,
-  "bbox_left": 1,
-  "bbox_right": 18,
-  "bbox_top": 2,
+  "bbox_bottom": 19,
+  "bbox_left": 0,
+  "bbox_right": 19,
+  "bbox_top": 1,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40f0442c-4ef5-4970-882c-f98902c2eff2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a5bd2442-37cc-4ec5-be75-bda1c82ab7ca",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"edc72b03-39b8-41fa-b23b-04bb46d24221","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f7080757-45a1-4396-8d8d-aeb6523b30c5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -77,7 +77,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40f0442c-4ef5-4970-882c-f98902c2eff2","path":"sprites/spr_rubble/spr_rubble.yy",},},},"Disabled":false,"id":"8d2c6dec-c4dd-45f4-8b07-b2f354c129ef","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a5bd2442-37cc-4ec5-be75-bda1c82ab7ca","path":"sprites/spr_rubble/spr_rubble.yy",},},},"Disabled":false,"id":"a1f69e7e-6f93-4ddb-938c-5d52152c3710","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
