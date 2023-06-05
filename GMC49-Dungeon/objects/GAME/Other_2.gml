@@ -1,6 +1,8 @@
 /// @desc GAME: Game Start
 room_goto(rm_main);
 
+secrets = 0;
+
 function initialize_wires()
 {
 	#region _copy_targets(object);
@@ -45,12 +47,9 @@ function initialize_wires()
 			init_size = array_length(targets);
 			_copy_targets(obj_wire);
 			if (init_size != array_length(targets)) { done = false; }
-			
-			show_debug_message($"Found Targets: {targets}");
 		}
 		
 		count ++;
-		show_debug_message(count);
 	} until (done || count > MAX_COUNT);
 	ds_list_destroy(temp);
 	

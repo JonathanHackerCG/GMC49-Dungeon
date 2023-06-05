@@ -31,6 +31,7 @@ function _set_scribble()
 {
 	text_scribble = scribble($"{text_string}")
 		.starting_format(text_font, c_white)
+		.wrap(CAMERA.gui_w * 0.50)
 		.align(fa_center, fa_center);
 }
 #endregion

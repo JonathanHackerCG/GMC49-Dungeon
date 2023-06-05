@@ -36,5 +36,8 @@
     "path": "sprites/spr_secret/spr_secret.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "LevelBuilding",
+  ],
   "visible": false,
 }

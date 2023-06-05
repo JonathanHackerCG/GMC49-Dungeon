@@ -80,3 +80,11 @@ if (instance_exists(inst))
 }
 else { can_portal = true; }
 #endregion
+#region Secrets
+inst = instance_place(x, y, obj_secret);
+if (instance_exists(inst))
+{
+	GAME.secrets ++;
+	instance_destroy(inst);
+}
+#endregion
